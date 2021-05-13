@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="header_div">
         <div class="logo">
-            <img src="assests\images\logo.png" alt="logo" width="150px" height="200px">
+            <a href="index.html"><img src="assests\images\logo.png" alt="logo" width="150px" height="200px"></a>
             <a href="login.html" target="_blank">Login</a>
         </div>
     </div>
@@ -17,9 +17,19 @@
            <div class="hotel_image">
                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radison hotel image">
            </div>
-           <div class="booknow">
-               <a href="payment.html">Book Now</a>
-           </div>
+           <form>
+           <label for="name">Name :</label>
+                <input type="text" placeholder="enter your name" required><br>
+                <label for="numberofadult">Adults :</label>
+                <input type="number" minlength="1" maxlength="30"><br>
+                <label for="checkindate">check in date :</label>
+                <input type="date"><br>
+                <label for="checkoutdate">check out date</label>
+                <input type="date"><br>
+                <label for="total">Total</label>
+                <input type="number" readonly><br>
+                <a href="payment.html"><input type="button" value="Book Now"> </a>
+            </form>
            <h5>Radisson Blu Hotel</h5>
            <h2>RATING</h2>
            <p>5 Star</p>
