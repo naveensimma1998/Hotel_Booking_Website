@@ -1,21 +1,32 @@
 html {
     scroll-behavior: smooth;
   }
-  html,body{
-    height: 100%;
-    margin: 0;
-}
-header,footer{
-    background-color: rosybrown;
-}
+ 
 body {
   background-color: #e0e0e0;
 }
-
 .hotel-images{
   margin: 2%;
 }
-.hotel-image {
-  width: 40%;
-  background-color: rgb(132,136,139);
+
+ul.nav-items li {
+  display: inline;
 }
+li a{
+  padding: 16px;
+}
+.nav-items {
+  margin-top: 20px;
+  padding:0;
+  text-align:center;
+}
+.imagebackground{
+  background-color: rgb(132,136,139);
+
+  margin: 2%;
+  margin-left: 5%;
+  width: 40%;
+  height: auto;
+  display: inline-flex;
+}
+

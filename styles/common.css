@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    }
+body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
+    }
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+    }
+.social-media-icons {
+    height: 20px;
+    width: 22px;
+    }
+.social-media {
+    float: right;
+    margin-bottom: auto;
+    margin-top: auto;
+    box-sizing: border-box;
+    margin-right: 2%;
+    }
+.social-media-icons {
+    float: left;
+    margin-right: 5px;
+    }
+header {
+    background-color: rosybrown;
+    display:flex;
+    justify-content: space-between;
+    z-index: 2;;
+    }
+footer {
+    background-color: rosybrown;
+    z-index: 2;
+    }
+.header1,.footer1 {
+    width: 100%;
+    position: sticky;
+    font-family: "Ubuntu", sans-serif;
+    overflow: hidden;
+   }
+.header1 {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+   }
+.footer1 {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    }
+.copyright {
+    font-size: 10px;
+    align-self: center;
+    }
+.login {
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 17px;
+    margin-right: 2%;
+    }
+.footer1::before,
+.footer1::after,
+.header1::before,
+.header1::after {
+    box-sizing: border-box;
+    }
+.contact-us{
+    margin-left: 1%;
+    margin-top:1%;
+    }

@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles\detail.css">
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="assests\images\logo.png" alt="logo" width="60px" height="60px"></a>
-            <a href="login.html" target="_blank">Login</a>
-        </div>
+    <link rel="stylesheet" href="styles/common.css">
+    <header class="header1">
+        <img src="assests/images/logo.png" class="logo" alt="logo" >
+              <span class="login" style="color:black;font-family: 'Ubuntu', sans-serif;">
+                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" id="login-button" style="background-color:white;color:black;font-family: 'Ubuntu', sans-serif;">
+                      Login
+                   </button>
+               </span>
     </header>
     </head>
     <body>
@@ -18,7 +22,7 @@
            <div id="hotel_image">
                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radison hotel image" height="500px" width="500px">
            </div>
-           <form>
+           <form style="font-family: 'Ubuntu', sans-serif;">
            <label for="name">Name :</label>
                 <input type="text" placeholder="enter your name" required><br>
                 <label for="numberofadult">Adults :</label>
@@ -43,18 +47,21 @@
         <p>Very fine hotel with an excellent breakfast buffet. The neighborhood felt safe and the transit was fairly accessible. Great breakfast!</p>
         </div>
 </body>
-<footer>
-    <div class="Contact">
-        <a href="contact.html" target="_blank">Contact Us</a>
-    </div>
-    <div class="socialmedia">
-       <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" height="20px" width="22px"></a>
-       <a href="https://www.instagram.com/"><img src="assests/images/instagram.png" height="20px" width="22px"></a>
-       <a href="https://www.twitter.com/"><img src="assests/images/twitter.png" height="20px" width="22px"></a>
-    </div>
-    <div>
-     ©2020 ROOM SEARCH PRIVATE LTD.
-    </div>
-</footer>
+<footer class="footer1">
+    <div class="contact-us">
+        <p class="contact" style="color: black">
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-usModal" id="login-button" >
+               Contact Us
+           </button></p>
+   </div>
+ <p class="copyright" style="color: black">© 2020 ROOM SEARCH PVT. LTD.</p>
+     <div class="social-media"><a href="https://www.facebook.com/upGradGlobal/" target="_blank">
+       <img src="assests/images/facebook.png" alt="facebook" class="social-media-icons"/></a>
+             <a href="https://www.instagram.com/upgrad_edu/?hl=en" target="_blank">
+               <img src="assests/images/instagram.png" alt="instagram" class="social-media-icons"/></a>
+             <a href="https://twitter.com/upGrad_edu" target="_blank">
+               <img src="assests/images/twitter.png" alt="twitter" class="social-media-icons"/></a>
+     </div>
+ </footer>
 </div>
 </html>

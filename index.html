@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/common.css"> 
     <link rel="stylesheet" href="styles/index.css">
-    <header>
-        <div class="logo">
-            <img src="assests\images\logo.png" alt="logo" width="60px" height="60px">
-            <a href="login.html" target="_blank">Login</a>
-        </div>
-    </header>
+     <header class="header1">
+            <img src="assests/images/logo.png" class="logo" alt="logo" >
+                  <span class="login" style="color:black">
+                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" id="login-button" style="background-color:white;color:black;">
+                          Login
+                       </button>
+                   </span>
+        </header>
     </head>
     <body>
-    <div class="content">
+    <div class="content" >
         <div class="searchbarbackground">
             <div class="searchbar">
                 <label for="cityname"></label>
-                <input type="text" placeholder="city">
+                <input id="form-name" type="text" placeholder="city" style="width: 300px;outline: none;" />
             </div>
         </div>
     <div class="images-viewmore">  
@@ -36,23 +40,26 @@
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="image4" height="150px" width="150px">
             </div>
             </div>
-    <div class="viewmore>"><a href="index.html">View More >></a>
-    </div>
+    <div class="viewmore"><a href="index.html" >View More >></a>
+    </div> <br>
     </div></div>
 </body>
-<footer>
-   <div class="Contact">
-       <a href="contact.html" target="_blank">Contact Us</a>
+<footer class="footer1">
+    <div class="contact-us">
+        <p class="contact" style="color: black">
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-usModal" id="login-button" >
+               Contact Us
+           </button></p>
    </div>
-   <div class="socialmedia">
-      <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" height="20px" width="22px"></a>
-      <a href="https://www.instagram.com/"><img src="assests/images/instagram.png" height="20px" width="22px"></a>
-      <a href="https://www.twitter.com/"><img src="assests/images/twitter.png" height="20px" width="22px"></a>
-   </div>
-   <div>
-    ©2020 ROOM SEARCH PRIVATE LTD.
-   </div>
-</footer>
+ <p class="copyright" style="color: black">© 2020 ROOM SEARCH PVT. LTD.</p>
+     <div class="social-media"><a href="https://www.facebook.com/upGradGlobal/" target="_blank">
+       <img src="assests/images/facebook.png" alt="facebook" class="social-media-icons"/></a>
+             <a href="https://www.instagram.com/upgrad_edu/?hl=en" target="_blank">
+               <img src="assests/images/instagram.png" alt="instagram" class="social-media-icons"/></a>
+             <a href="https://twitter.com/upGrad_edu" target="_blank">
+               <img src="assests/images/twitter.png" alt="twitter" class="social-media-icons"/></a>
+     </div>
+ </footer>
 </div>
 </html>
 
