@@ -1,0 +1,28 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+header,footer{
+    background-color: rosybrown;
+}
+body{
+    background-color: #e0e0e0;
+}
+.hotel-details {
+    background-color: rgb(132,136,139);
+    margin-top: 2%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tarrif {
+    border: 1px solid black;
+    margin: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 5px;
+    box-sizing: content-box;
+}

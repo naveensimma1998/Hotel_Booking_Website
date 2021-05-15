@@ -1,4 +1,15 @@
-.poolside{
-height: 500px;
-width: 500px;
+html,body{
+    height: 100%;
+    margin: 0;
+}
+header,footer{
+    background-color: rosybrown;
+}
+.content_div {
+    
+    margin-top: 2%;
+    margin-left: 4%;
+}
+body{
+    background-color: #e0e0e0;
 }

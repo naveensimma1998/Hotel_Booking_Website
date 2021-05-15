@@ -1,0 +1,17 @@
+html,body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 12px solid #f3f3f3;
+    border-top-color: #444;
+    animation: loading 1s linear infinite;
+}
