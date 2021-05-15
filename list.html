@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="header_div">
+    <link rel="stylesheet"type="text/css"  href="styles\list.css">
+    <div class="header">
         <div class="logo">
-            <a href="index.html"> <img src="assests\images\logo.png" alt="logo" width="150px" height="200px"></a>
+           <a href="index.html" > <img src="assests\images\logo.png" alt="logo" width="60px" height="60px"></a>
             <a href="login.html" target="_blank">Login</a>
         </div>
     </div>  
@@ -15,34 +16,39 @@
     <body>
         <div class="content_div">
             <ul>
-               <a href="list.html"><li>List View</li></a>
-               <a href="list.html"><li>Map View</li></a> 
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#ListView">List View</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" data-toggle="pill" href="#MapView">Map View</a>
+                 </li>
             </ul>
-
-           <a href="detail.html"> <div class="hotel_image">
-              <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+        <div class="hotel-images">
+           <a href="detail.html"> <div id="ListView">
+              <img class="poolside" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="200px" width="250px" alt="poolside">
                 <h3>Radisson Blu Hotel</h3>
                 <p>5 Star</p>
                 <p>New Delhi</p>
             </div></a>
-            <div class="hotel_image">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
+            <div class="hotel-image">
+                <img class="faceade" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" height="200px" width="250px" alt="facade">
                 <h3>The Lalit New Delhi</h3>
                 <p>4.5 Star</p>
                 <p>New Delhi</p>
             </div>
-            <div class="hotel_image">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
+            <div class="hotel-image">
+                <img class="exterior" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" height="200px" width="250px" alt="exterior">
                 <h3>Taj Palace</h3>
                 <p>4 Star</p>
                 <p>New Delhi</p>
             </div>
-
-            <div class="map_image">
-                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
-                <h3>Map View</h3>
-            </div>
+            <div id="MapView">
+                <div id="map-view"><img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="pixabay">
+                    <h3>Map View</h3>
+                </div>
+             </div>
         </div>
+    </div>
 </body>
 <div class="footer">
     <div class="Contact">

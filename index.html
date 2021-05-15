@@ -5,39 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="header">
+    <link rel="stylesheet" href="styles/index.css">
+    <header>
         <div class="logo">
-            <img src="assests\images\logo.png" alt="logo" width="150px" height="200px">
+            <img src="assests\images\logo.png" alt="logo" width="60px" height="60px">
             <a href="login.html" target="_blank">Login</a>
         </div>
-    </div>
-        <style>
-            .images {
-                display: flex;
-                flex-direction: row;
-            }
-            .city {
-               
-                padding: 2px;
-            }
-        </style>
+    </header>
     </head>
     <body>
-        <div id="content">
+    <div class="content">
             <div class="searchbar">
                 <label for="cityname"></label>
                 <input type="text" placeholder="city">
             </div>
-            <div class="images">
-               <a href="list.html"><div class="city"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="delhi" height="300px" width="300px"></div></a> 
-                <div class="city"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa" height="300px" width="300px"></div>
-                <div class="city"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="300px" width="300px"></div>
-                <div class="city"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="300px" width="300px"></div>
+    <div class="container">
+           <div class="cityimage">
+                <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="delhi" height="150px" width="150px">
+            </div></a>
+            <div class="cityimage" >
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa" height="150px" width="150px">
+            </div>
+            <div class="cityimage" >
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="150px" width="150px">
+            </div>
+            <div class="cityimage" >
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="150px" width="150px">
             </div>
         </div>
+    </div>
     <a href="index.html">View More >></a>
 </body>
-<div class="footer">
+<footer>
    <div class="Contact">
        <a href="contact.html" target="_blank">Contact Us</a>
    </div>
@@ -49,7 +48,7 @@
    <div>
     ©2020 ROOM SEARCH PRIVATE LTD.
    </div>
-</div>
+</footer>
 </div>
 </html>
 
