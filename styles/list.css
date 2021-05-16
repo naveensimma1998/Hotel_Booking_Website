@@ -21,7 +21,7 @@ li a{
   text-align:center;
 }
 .imagebackground{
-  background-color: rgb(132,136,139);
+  background-color: lightgrey;
 
   margin: 2%;
   margin-left: 5%;
@@ -29,4 +29,8 @@ li a{
   height: auto;
   display: inline-flex;
 }
-
+.hotel-image{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}

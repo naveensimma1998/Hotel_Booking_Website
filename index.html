@@ -8,16 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/common.css"> 
     <link rel="stylesheet" href="styles/index.css">
-     <header class="header1">
-            <img src="assests/images/logo.png" class="logo" alt="logo" >
-                  <span class="login" style="color:black">
-                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" id="login-button" style="background-color:white;color:black;">
-                          Login
-                       </button>
+</head>
+ <body>
+<header class="header1">
+<img src="assests/images/logo.png" class="logo" alt="logo" >
+    <span class="login" style="color:black"> 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" id="login-button" style="background-color:white;color:black;">
+                          Login </button>
                    </span>
         </header>
-    </head>
-    <body>
     <div class="content" >
         <div class="searchbarbackground">
             <div class="searchbar">
@@ -25,25 +24,37 @@
                 <input id="form-name" type="text" placeholder="city" style="width: 300px;outline: none;" />
             </div>
         </div>
-    <div class="images-viewmore">  
-    <div class="city-images-container">
+    
+    <div class="city-image-container">
            <div class="cityimage">
                 <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="image1" alt="delhi" height="150px" width="150px">
-            </div></a>
+            </a>
+            <a href="list.html"><div class="middletransition">
+                <div class="text">Delhi</div>
+     </div></a></div>
             <div class="cityimage" >
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="image2" alt="goa" height="150px" width="150px">
-            </div>
+            <div class="middletransition">
+                <div class="text">Goa</div>
+     </div></div>
             <div class="cityimage" >
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="image3" height="150px" width="150px">
-            </div>
+               <div class="middletransition">
+                    <div class="text">Delhi</div>
+         </div></div>
             <div class="cityimage" >
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="image4" height="150px" width="150px">
+            <div class="middletransition">
+                <div class="text">Delhi</div>
+     </div>
             </div>
-            </div>
-    <div class="viewmore"><a href="index.html" >View More >></a>
-    </div> <br>
-    </div></div>
-</body>
+        </div>
+            <div class="viewmore" font-family='Ubuntu', sans-serif>
+                <a id="decor" href="index.html" style="font-family:'Ubuntu', sans-serif ; ;" >
+                    <p style="color:black" ><button type="button" class="btn btn-secondary" id="filled-buttons">View more>></button></p></a>
+          </div>
+        </div>
+
 <footer class="footer1">
     <div class="contact-us">
         <p class="contact" style="color: black">
@@ -61,5 +72,5 @@
      </div>
  </footer>
 </div>
+</body>
 </html>
-

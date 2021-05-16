@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles\detail.css">
     <link rel="stylesheet" href="styles/common.css">
     <header class="header1">
-        <img src="assests/images/logo.png" class="logo" alt="logo" >
+       <a href="index.html"> <img src="assests/images/logo.png" class="logo" alt="logo" ></a>
               <span class="login" style="color:black;font-family: 'Ubuntu', sans-serif;">
                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" id="login-button" style="background-color:white;color:black;font-family: 'Ubuntu', sans-serif;">
                       Login
@@ -19,22 +19,26 @@
     </head>
     <body>
         <div class="content_div">
-           <div id="hotel_image">
-               <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radison hotel image" height="500px" width="500px">
+           <div id="hotel-image">
+               <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radison hotel image" height="350px" width="350px">
            </div>
+           <div class="form">
            <form style="font-family: 'Ubuntu', sans-serif;">
-           <label for="name">Name :</label>
-                <input type="text" placeholder="enter your name" required><br>
-                <label for="numberofadult">Adults :</label>
-                <input type="number" minlength="1" maxlength="30"><br>
-                <label for="checkindate">check in date :</label>
-                <input type="date"><br>
-                <label for="checkoutdate">check out date</label>
-                <input type="date"><br>
-                <label for="total">Total</label>
-                <input type="number" readonly><br>
+           <label class="person" for="name">Name :</label>
+                <input class="details" type="text" placeholder="enter your name" required><br> <br>
+                <label class="person" for="numberofadult">Adults :</label>
+                <input class="details" type="number" minlength="1" maxlength="30"><br><br>
+                <label class="person" for="checkindate">check in date :</label>
+                <input class="details" type="date"><br><br>
+                <label class="person" for="checkoutdate">check out date</label>
+                <input class="details" type="date"><br><br>
+                <label class="person" for="total">Total</label>
+                <input class="details" type="number" readonly><br><br>
                 <a href="payment.html"><input type="button" value="Book Now"> </a>
             </form>
+        </div>
+        </div>
+            <div class="hoteldescription">
            <h1>Radisson Blu Hotel</h1>
            <h2>RATING</h2>
            <p>5 Star</p>
