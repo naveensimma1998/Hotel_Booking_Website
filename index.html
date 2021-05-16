@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/common.css"> 
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
  <body>
 <header class="header1">
@@ -50,7 +53,7 @@
             </div>
         </div>
             <div class="viewmore" font-family='Ubuntu', sans-serif>
-                <a id="decor" href="index.html" style="font-family:'Ubuntu', sans-serif ; ;" >
+                <a id="decor" href="index.html" style="font-family:'Ubuntu', sans-serif;" >
                     <p style="color:black" ><button type="button" class="btn btn-secondary" id="filled-buttons">View more>></button></p></a>
           </div>
         </div>
@@ -72,5 +75,70 @@
      </div>
  </footer>
 </div>
+
+
+<!-- Modal-login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+           <div class="modal-content">
+                <div class="modal-header">
+                     <h5 class="modal-title" id="loginModalLabel">Please Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                        </button>
+               </div> 
+       <div class="modal-body">
+            <form>
+          <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Username:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Username">
+                    </div>
+         </div>
+         <div class="form-group row">
+           <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Enter Password">
+            </div>
+         </div>
+     </form>
+</div>
+           <div class="modal-footer" style="display:flex;justify-content:center;"><button type="submit" class="btn btn-primary">Login</button></div>
+      </div>
+    </div>
+ </div>
+
+
+
+
+ <!-- Modal-contactus-->
+<div class="modal fade" id="contact-usModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                 <h5 class="modal-title" id="loginModalLabel">Get in touch</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                   </button>
+              </div>
+<div class="modal-body">
+         <p class="text-sm-left">Thank you for reaching out!!!</br>
+             Please enter your email and we will get back to you.</p>
+      <form>
+           <div class="form-group row">
+             <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+           <div class="col-sm-10">
+             <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your emailid">
+           </div>
+          </div>
+    </form>
+   </div>
+          <div class="modal-footer" ><button type="submit" class="btn btn-primary">Submit</button></div>
+         </div>
+    </div>
+</div>
+</body>
+
+</html>
 </body>
 </html>

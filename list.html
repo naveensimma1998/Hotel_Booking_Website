@@ -6,8 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"type="text/css"  href="styles\list.css">
     <link rel="stylesheet" href="styles/common.css">
+</head>
+<body>
+<div class="loader">
     <header class="header1">
         <a href="index.html"><img src="assests/images/logo.png" class="logo" alt="logo" ></a>
               <span class="login" style="color:black">
@@ -16,64 +23,135 @@
                    </button>
                </span>
     </header> 
-</head> 
-    <body>
-<div class="content">
-            <div class="nav-items" >
-            <ul class="nav-items">
-                <li>
-                    <a href="#ListView" style="text-decoration: none;font-weight: bold; color: black; font-family:'Ubuntu', sans-serif ;" >List View</a>
-                 </li>
-                 <li class="nav-item">
-                     <a  href="#MapView" style="text-decoration: none; font-weight: bold; color: black;">Map View</a>
-                 </li>
-            </ul>
-        </div>
-        <div class="hotel-images">
-            <div class="imagebackground">
-           <a href="detail.html" style="text-decoration: none; color: black;"> <div id="ListView" class="hotel-image">
-              <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="image1" height="200px" width="250px" alt="poolside">
-              <div class="hotelname" style="padding-left: 20px;"><h3>Radisson Blu Hotel</h3>
-                <p>5 Star</p> 
-                <p>New Delhi</p></div>
-                
-            </div></a></div>
-            <div class="imagebackground">
-            <div class="hotel-image">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="image2" height="200px" width="250px" alt="facade">
-                <div class="hotelname" style="padding-left: 20px;"><h3>The Lalit New Delhi</h3>
-                <p>4.5 Star</p>
-                <p>New Delhi</p>
-            </div></div></div>
-            <div class="imagebackground">
-            <div class="hotel-image">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" class="image3" height="200px" width="250px" alt="exterior">
-                <div class="hotelname" style="padding-left: 20px;"><h3>Taj Palace</h3>
-                <div class="hotelname" style="padding-left: 20px;"></div><p>4 Star</p>
-                <p>New Delhi</p>
-            </div></div></div></div></div>
-            <div id="MapView">
-                <div id="map-view"><img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" class="mapimage" alt="pixabay">
-                    <h3>Map View</h3>
+<div id="container" style="color:black;font-family:'Ubuntu', sans-serif">
+        <ul class="nav nav-pills" id="pills-tab">
+          <li class="nav-item">
+             <a class="nav-link active" data-toggle="pill" href="#ListView">List View</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#MapView">Map View</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div id="ListView" class="tab-pane fade show active">
+              <div id="list-view" class="list-view1" style="color:black;font-family:'Ubuntu', sans-serif">
+                <div><a href="detail.html" style="text-decoration:none;">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="by-the-poolside" height="250px" width="250px"></div>
+                    <div class="content1"><h3 style="color:black;">Redisson Blu Hotel</h3>
+                        <p style="color:black;">
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span></p>
+                         <p style="color:black;">New Delhi</p></a>
+                     </div>
                 </div>
-        </div>
-    </body>
-    <footer class="footer1">
-        <div class="contact-us">
-            <p class="contact" style="color: black">
-               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-usModal" id="login-button" >
-                   Contact Us
-               </button></p>
-       </div>
-     <p class="copyright" style="color: black;font-family: 'Ubuntu', sans-serif;">© 2020 ROOM SEARCH PVT. LTD.</p>
-         <div class="social-media"><a href="https://www.facebook.com/upGradGlobal/" target="_blank">
-           <img src="assests/images/facebook.png" alt="facebook" class="social-media-icons"/></a>
-                 <a href="https://www.instagram.com/upgrad_edu/?hl=en" target="_blank">
-                   <img src="assests/images/instagram.png" alt="instagram" class="social-media-icons"/></a>
-                 <a href="https://twitter.com/upGrad_edu" target="_blank">
-                   <img src="assests/images/twitter.png" alt="twitter" class="social-media-icons"/></a>
-         </div>
-     </footer>
-</div>
-</html>
-
+                <div id="list-view" class="list-view2" style="color:black;font-family:'Ubuntu', sans-serif">
+                    <div><img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="facade" height="250px" width="250px"></div>
+                  <div class="content2"><h3>The Lalit New Delhi</h3>
+                             <p>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star-half-o" style="color:orange"></span>
+                                 <span class="fa fa-star"></span></p>
+                      <p>New Delhi</p>
+                   </div>
+                  </div>
+           <div id="list-view" class="list-view3" style="color:black;font-family:'Ubuntu', sans-serif">
+                 <div><img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="exterior" height="250px" width="250px"></div>
+                                 <div class="content3"><h3>Taj Palace</h3>
+                                     <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span></p>
+                          <p>New Delhi</p>
+                                 </div>
+               </div>
+           </div>
+           <div id="MapView" class="tab-pane fade">
+                       <div id="map-view" style="color:black;font-family:'Ubuntu', sans-serif"><img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="pixabay" height="750px" width="750px">
+                          <p>MAP VIEW </p> </div>
+                      </div>
+               </div>
+           </div>
+           <footer class="footer1">
+               <div class="contact-us">
+                     <p class="contact" style="color: black">
+                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-usModal" id="login-button" >
+                              Contact Us
+                         </button></p>
+               </div>
+               <p class="room" style="color: black">© 2020 ROOM SEARCH PVT. LTD.</p>
+                <div class="social-media">
+                   <a href="https://www.facebook.com/upGradGlobal/" target="_blank">
+                       <img src="assests/images/facebook.png" alt="facebook" class="social-media-icons"/></a>
+                   <a href="https://www.instagram.com/upgrad_edu/?hl=en" target="_blank">
+                       <img src="assests/images/instagram.png" alt="instagram" class="social-media-icons"/></a>
+                   <a href="https://twitter.com/upGrad_edu" target="_blank">
+                       <img src="assests/images/twitter.png" alt="twitter" class="social-media-icons"/></a>
+                     </div>
+               </footer>
+             </div>
+           
+           <!-- Modal-login-->
+           <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                      <h5 class="modal-title" id="loginModalLabel">Please Login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                           </button>
+                      </div>
+                     <div class="modal-body">
+                        <form>
+                          <div class="form-group row">
+                             <label for="inputEmail3" class="col-sm-2 col-form-label">Username:</label>
+                              <div class="col-sm-10">
+                                 <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Username">
+                              </div>
+                         </div>
+                   <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
+                             <div class="col-sm-10">
+                                 <input type="password" class="form-control" id="inputPassword3" placeholder="Enter Password">
+                             </div>
+                   </div>
+                  </form>
+               </div>
+                       <div class="modal-footer" style="display:flex;justify-content:center;"><button type="submit" class="btn btn-primary">Login</button></div>
+                            </div>
+                        </div>
+                  </div>
+               
+               <!-- Modal-contactus-->
+               <div class="modal fade" id="contact-usModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                             <div class="modal-header">
+                                 <h5 class="modal-title" id="loginModalLabel">Get in touch</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                             </div>
+                      <div class="modal-body">
+                           <p class="text-sm-left">Thank you for reaching out!!!</br>
+                                 Please enter your email and we will get back to you.</p>
+                       <form>
+                          <div class="form-group row">
+                             <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                         <div class="col-sm-10">
+                             <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your emailid">
+                        </div>
+                   </div>
+               </form>
+                    </div>
+                      <div class="modal-footer" ><button type="submit" class="btn btn-primary">Submit</button></div>
+                         </div>
+                    </div>
+               </div>
+             </body>
+           </html>

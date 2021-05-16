@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
     margin: 0;
     height: 100%;
 }
@@ -14,4 +15,10 @@ body {
     border: 12px solid #f3f3f3;
     border-top-color: #444;
     animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
 }

@@ -1,68 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div>
-    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/payment.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <header class="header1">
-      <a href="index.html">  <img src="assests/images/logo.png" class="logo" alt="logo" ></a>
-              <span class="login" style="color:black">
-                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" id="login-button" style="background-color:white;color:black;">
-                      Login
-                   </button>
-               </span>
-    </header>
-    <body>
-        <div class="content">
-        <div class="hotel-details">
-            <div class="poolside">
-                <img  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radison hotel image" height="270px" width="300px">
-            </div>
-            <div class="hotel-address">
-                <h3 style="font-family:'Ubuntu', sans-serif; font-size: 25px; padding-left: 20px;">Radisson Blu Hotel</h3>
-                <p class="address" style="margin-right: 20px;padding-left: 15px;">Jeevan Tara Building, 1Sr Floor, Gate No.4,5 Sansad Marg, 
-                    New Delhi</p>
-            </div>
-            </div>
-            
-            <div class="customer-details" style="font-family: cursive;">
-                <div class="payment_details">
-                    <form>
-                    <p ><b>Name </b>: Naveen Simma </p>
-                    <p><b>No of Adults </b>: 2 </p>
-                    <p><b>Check in date </b>: 01/05/2020 </p>
-                    <p><b>Check out date </b>: 02/05/2020</p>
-                    </div>
-                    <div class="tarrif">
-                    <p><b>Tarrif Breakdown </b>: 2000 x 2 Adults x 1 Night </p>
-                    <p><b>Total Amount </b>: 2000 </p>
-                </div>
-            </form>
-                <div class="paynow">
-                    <a href="payment.html" style="text-decoration: none; color: black;">Pay Now</a>
-                </div>
-            </div>
-</body>
-<footer class="footer1">
-    <div class="contact-us">
-        <p class="contact" style="color: black">
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-usModal" id="login-button" >
-               Contact Us
-           </button></p>
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Payment</title>
+   <link rel="stylesheet" href="styles/common.css">
+   <link rel="stylesheet" href="styles/payment.css">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="loader">
+     <header class="header1">
+     <a href="index.html"><img src="assests/images/logo.png" class="logo" alt="logo" ></a>
+     <span class="login" style="color:black">
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" id="login-button" style="background-color:white;color:black;">
+         Login
+       </button>
+     </span>
+     </header>
+   <div class="content" >
+      <div class="redisson" style="font-family:'Ubuntu', sans-serif">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="by-the-poolside" height="300px" width="270px">
+      </div>
+   <div class="hotel-descrp" >
+     <h2>Redisson Blu Hotel</h2>
+     <p>#38 of 1,289 hotels in New Delhi</p>
+     <p>National Highway 8,New Delhi 110017 Indian</p>
    </div>
- <p class="copyright" style="color: black">© 2020 ROOM SEARCH PVT. LTD.</p>
-     <div class="social-media"><a href="https://www.facebook.com/upGradGlobal/" target="_blank">
+  </div>
+    <div class="all">
+    <div class="details" style="font-family:'Ubuntu', cursive">
+    <span>
+      <strong>Name</strong>:John Doe</br></br>
+      <strong>Number of Adults</strong>:2</br></br>
+      <strong>Check-in-Date</strong>:06/06/2020</br></br>
+      <strong>Check-out-Date</strong>:08/06/2020
+    </span>
+    </div>
+  <div class="tariff" style="font-family:'Ubuntu', cursive">
+     <p><strong>Tariff Breakdown</strong>:Rs. 1000x2 Adultsx5 Nights</br></br>
+        <strong>Total Amount</strong>:Rs.10000
+     </p>
+  </div>
+   <div class="paynow" style="font-family:'Ubuntu', cursive">
+    <button type="button" disabled class="btn btn-success" id="filled-buttons" style="margin: 10px;">Pay Now</button>
+   </div>
+  </div>
+  <footer class="footer1">
+    <div class="contact-us">
+    <p class="contact" style="color: black">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-usModal" id="login-button" >
+    Contact Us</button>
+    </p>
+   </div>
+     <p class="room" style="color: black">© 2020 ROOM SEARCH PVT. LTD.</p>
+   <div class="social-media"><a href="https://www.facebook.com/upGradGlobal/" target="_blank">
        <img src="assests/images/facebook.png" alt="facebook" class="social-media-icons"/></a>
-             <a href="https://www.instagram.com/upgrad_edu/?hl=en" target="_blank">
-               <img src="assests/images/instagram.png" alt="instagram" class="social-media-icons"/></a>
-             <a href="https://twitter.com/upGrad_edu" target="_blank">
-               <img src="assests/images/twitter.png" alt="twitter" class="social-media-icons"/></a>
-     </div>
- </footer>
+       <a href="https://www.instagram.com/upgrad_edu/?hl=en" target="_blank">
+        <img src="assests/images/instagram.png" alt="instagram" class="social-media-icons"/></a>
+       <a href="https://twitter.com/upGrad_edu" target="_blank">
+         <img src="assests/images/twitter.png" alt="twitter" class="social-media-icons"/></a>
+  </div>
+  </footer>
 </div>
-</html>
 
+<!-- Modal-login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="loginModalLabel">Please Login</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+    <div class="form-group row">
+     <label for="inputEmail3" class="col-sm-2 col-form-label">Username:</label>
+    <div class="col-sm-10">
+  <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Username">
+        </div>
+     </div>
+    <div class="form-group row">
+     <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
+      <div class="col-sm-10">
+       <input type="password" class="form-control" id="inputPassword3" placeholder="Enter Password">
+         </div>
+      </div>
+   </form>
+  </div>
+  <div class="modal-footer" style="display:flex;justify-content:center;"><button type="submit" class="btn btn-primary">Login</button></div>
+        </div>
+     </div>
+  </div>
+  
+  <!-- Modal-contactus-->
+  <div class="modal fade" id="contact-usModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Get in touch</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+       </button>
+    </div>
+      <div class="modal-body">
+         <p class="text-sm-left">Thank you for reaching out!!!</br>
+             Please enter your email and we will get back to you.</p>
+       <form>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+           <div class="col-sm-10">
+         <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your emailid">
+               </div>
+          </div>
+      </form>
+  </div>
+          <div class="modal-footer" ><button type="submit" class="btn btn-primary">Submit</button></div>
+             </div>
+          </div>
+      </div>
+  </body>
+</html>

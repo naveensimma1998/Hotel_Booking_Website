@@ -1,33 +1,97 @@
-
-.content_div {
-    
+.poolside{
     margin-top: 2%;
     margin-left: 4%;
-}
-body{
-    background-color: #e0e0e0;
-}
-.content_div{
-height: 400px;
-    display: flex;
-    border: 3px solid black;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 4%;
+    margin-bottom: 0%;
+    }
+    .booknow{
+    margin-top: 0%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+    }
+    .description{
+    margin-top: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 2%;
+    }
+    .content{
+    margin: 3%;
+    width: 90%;
+    max-height: 400px;
+    display:inline-flex;
+    border: 1px solid black;
     
-}
-#hotel-image {
-padding-left: 20%;
-}
-.form{
-    padding-right: 10%;
-
-}
-.person{
-float: left;
-margin-right: 30px;
-}
-.details {
-    float: right;
-}
+    }
+    .content {
+    display: flex;
+    align-items: flex-start;
+    }
+    .poolside{
+    flex: 3;
+    text-align: center;
+    }
+    .content .booknow {
+    flex: 1;
+    padding: 10px;
+    border-left: 1px solid black;
+    justify-content: space-between;
+    }
+    #login:hover{
+    background-color: green;
+    }
+    .checked{
+      color:orange;
+    }
+    .carousel-icons{
+      color: rosybrown;
+      font-size: 3.4357rem;
+    }
+    .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  @media (min-width: 722.99px) and (max-width:3000px){
+    /* For large screens: */
+    [class*="col-"] {
+    width: 100%;
+    }
+    }
+    @media only screen , (min-width: 577px) and (max-width: 722px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+      width: 50%;
+     }
+   
+      }
+      @media only screen and (max-width: 576px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+      width: 28%;
+      }
+      .content{
+        width:80%;
+        height:auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      .description{
+        width:80%;
+        height:auto;
+        display: block;
+      }
+      footer {
+        display:flex;
+        justify-content: space-between; 
+      }
+     }
