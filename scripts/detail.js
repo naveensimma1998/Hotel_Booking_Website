@@ -2,7 +2,7 @@ window.addEventListener('load', (event) => {
     checkFunc();
   });
   
-  $(function() {
+  $(function() { 
       var dates = $( "#fromDate, #toDate" ).datepicker({
           defaultDate: "+1w",
           changeMonth: true,

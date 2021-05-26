@@ -2,7 +2,7 @@ window.addEventListener('load', (event) => {
     checkFunc();
   });
   
-  function myFun() {
+  function myFun() { 
       var x = document.getElementById("map-view");
       var y = document.getElementById("list-view");
   

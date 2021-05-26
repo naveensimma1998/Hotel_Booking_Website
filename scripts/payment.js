@@ -14,3 +14,4 @@ function checkFunc(){
       document.getElementById("paybutton").disabled=false;
     }
   }
+  

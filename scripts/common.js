@@ -50,7 +50,7 @@ function callLoginModalTemplate(){
           </button>
         </div>
         <div class="modal-body">
-          <form>
+          <form> 
             <div class="form-group row">
               <label for="username" class="col-sm-2 col-form-label">Username:</label>
               <div class="col-sm-10">
@@ -62,7 +62,7 @@ function callLoginModalTemplate(){
               <div class="col-sm-10">
                 <input type="password" class="form-control" id="inputPassword" required placeholder="Enter Password">
               </div>
-            </div>
+            </div> 
           </form>
         </div>
         <div class="modal-footer" style="display: flex; justify-content: center;">
